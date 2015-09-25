@@ -25,23 +25,28 @@ default: &default
  # database: db/production.sqlite3
 
 
+development:
+adapter: postgresql
+encoding: utf8
+database: spree_development
+username: postgres
+password: rss@123
+host: localhost
+
+ 
+
+test:
+adapter: postgresql
+encoding: utf8
+database: spree_test
+username: postgres
+password: rss@123
+host: localhost
 
 
 production:
 adapter: postgresql
 encoding: utf8
-database: spree_production
-username: postgres
-password: root
-host: localhost
-
-
-development:
-adapter: postgresql
-encoding: utf8
-database: spree_production
-username: postgres
-password: root
-host: localhost
-
-
+database: pg
+username: root
+password: rss@123
